@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import {Component} from 'react' /*import {Component} from 'react': This imports the Component class from the react library, which allows us to create a React component.*/
 
 import './index.css'
 
@@ -18,8 +18,11 @@ class RegistrationForm extends Component {
   }
 
   onChangeLastName = event => {
-    const {target} = event
-    const {value} = target
+    const {target} = event /*This line extracts the target property from the event object.
+    In the context of an input field, target refers to the input element that triggered the event.*/
+    const {value} = target /*This line extracts the value property from the target element.
+The value property contains the current text entered in the input field.
+    */
 
     this.setState({
       lastNameInput: value,
